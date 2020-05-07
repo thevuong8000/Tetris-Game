@@ -106,6 +106,7 @@ public class Board extends JPanel implements KeyListener{
 		// getNewShape();
 	}
 
+	/* clear the board for the new game */
 	private void reset(){
 		for(int i = 0; i < blockHeight; i++){
 			for(int j = 0; j < blockWidth; j++){
@@ -145,6 +146,7 @@ public class Board extends JPanel implements KeyListener{
 		return true;
 	}
 
+	/* process after fulfilling a row */
 	private void dropDown(int lastRow){
 		while(lastRow > 0){
 			table[lastRow] = table[lastRow - 1];
